@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Generador Habeas Data">
+  <meta name="description" content="Genera solicitudes profesionales de eliminación de datos personales según la Ley 1581 de 2012 de Colombia. Herramienta gratuita y fácil de usar para proteger tu privacidad digital.">
+  <meta name="keywords" content="habeas data, protección datos personales, Ley 1581, PQRS, solicitud eliminación datos, privacidad digital, Colombia, derecho al olvido">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Generador de Solicitud Habeas Data - Protege tu Privacidad Digital">
+  <meta property="og:description" content="Genera solicitudes profesionales de eliminación de datos personales según la Ley 1581 de 2012 de Colombia. Herramienta gratuita y fácil de usar.">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Generador Habeas Data">
+  
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="">
+  <meta property="twitter:title" content="Generador de Solicitud Habeas Data - Protege tu Privacidad Digital">
+  <meta property="twitter:description" content="Genera solicitudes profesionales de eliminación de datos personales según la Ley 1581 de 2012 de Colombia.">
+  
+  <!-- Theme and Icons -->
+  <meta name="theme-color" content="#667eea">
+  <meta name="msapplication-TileColor" content="#667eea">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  
+  <title>Generador de Solicitud Habeas Data - Protege tu Privacidad Digital</title>
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Generador de Solicitud Habeas Data",
+    "description": "Herramienta gratuita para generar solicitudes profesionales de eliminación de datos personales según la Ley 1581 de 2012 de Colombia",
+    "url": "",
+    "applicationCategory": "LegalApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "COP"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Generador Habeas Data"
+    },
+    "inLanguage": "es-CO",
+    "isAccessibleForFree": true
+  }
+  </script>
+  
+  <style>
+    :root {
+      /* Color Palette */
+      --primary: #667eea;
+      --primary-dark: #5a67d8;
+      --secondary: #48bb78;
+      --secondary-dark: #38a169;
+      --text-primary: #2d3748;
+      --text-secondary: #4a5568;
+      --text-muted: #a0aec0;
+      --bg-primary: #f7fafc;
+      --bg-secondary: #f8fafc;
+      --border: #e2e8f0;
+      --white: #ffffff;
+      --error: #ef4444;
+      --success: #48bb78;
+      
+      /* Spacing */
+      --spacing-xs: 0.25rem;
+      --spacing-sm: 0.5rem;
+      --spacing-md: 1rem;
+      --spacing-lg: 1.5rem;
+      --spacing-xl: 2rem;
+      --spacing-2xl: 3rem;
+      
+      /* Border Radius */
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      
+      /* Shadows */
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      
+      /* Typography */
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.5rem;
+      --font-size-2xl: 2.5rem;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: var(--spacing-xl);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .header h1 {
+      color: var(--white);
+      font-size: var(--font-size-2xl);
+      font-weight: 800;
+      margin-bottom: var(--spacing-sm);
+      text-shadow: var(--shadow-md);
+    }
+
+    .header p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: var(--font-size-lg);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-xl);
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .card {
+      background: var(--white);
+      padding: var(--spacing-xl);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      backdrop-filter: blur(10px);
+    }
+
+    .card h2 {
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-lg);
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+
+    .form-group {
+      margin-bottom: var(--spacing-lg);
+      position: relative;
+    }
+
+    .form-group-container {
+      position: relative;
+      background: var(--bg-secondary);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-lg);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .form-group-container:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+    }
+
+    .category-indicator {
+      position: absolute;
+      top: -8px;
+      left: var(--spacing-md);
+      background: linear-gradient(135deg, var(--primary) 0%, #764ba2 100%);
+      color: var(--white);
+      padding: var(--spacing-xs) var(--spacing-md);
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .category-indicator.personal { background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); }
+    .category-indicator.company { background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%); }
+    .category-indicator.location { background: linear-gradient(135deg, #38b2ac 0%, #319795 100%); }
+
+    label {
+      display: block;
+      margin-bottom: var(--spacing-xs);
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: var(--font-size-sm);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: var(--spacing-md);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      font-size: var(--font-size-base);
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+      background: var(--white);
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    .company-input-container {
+      position: relative;
+    }
+
+    .company-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .company-input-wrapper input {
+      padding-right: 40px;
+    }
+
+    .company-suggestions-toggle {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 50%;
+      color: var(--primary);
+      font-size: 16px;
+      transition: all 0.2s ease;
+      z-index: 2;
+    }
+
+    .company-suggestions-toggle:hover {
+      background: var(--bg-primary);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .popular-companies-hint {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      opacity: 0.8;
+    }
+
+    .popular-companies-panel {
+      padding: var(--spacing-md);
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, #f1f5f9 100%);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      transform: translateY(-10px);
+      opacity: 0;
+      max-height: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .popular-companies-panel.show {
+      transform: translateY(0);
+      opacity: 1;
+      max-height: 300px;
+      margin-top: var(--spacing-md);
+      overflow: visible;
+    }
+
+    .popular-companies-header {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xs);
+      margin-bottom: var(--spacing-md);
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .company-chips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--spacing-xs);
+    }
+
+    .company-chip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--spacing-xs) var(--spacing-sm);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: var(--font-size-sm);
+      text-align: left;
+    }
+
+    .company-chip:hover {
+      border-color: var(--primary);
+      background: linear-gradient(135deg, var(--primary) 0%, #764ba2 100%);
+      color: var(--white);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(102, 126, 234, 0.15);
+    }
+
+    .company-chip-name {
+      font-weight: 500;
+      flex: 1;
+    }
+
+    .company-chip-icon {
+      font-size: 12px;
+      opacity: 0.7;
+      margin-left: var(--spacing-xs);
+    }
+
+    .company-chip:hover .company-chip-icon {
+      opacity: 1;
+    }
+
+    .input-with-icon {
+      position: relative;
+    }
+
+    .input-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .input-with-icon input {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .email-search-toggle {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 50%;
+      color: var(--primary);
+      font-size: 16px;
+      transition: all 0.2s ease;
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .email-search-toggle.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .email-search-toggle:hover {
+      background: var(--bg-primary);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .preview-item {
+      margin-bottom: var(--spacing-lg);
+      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: var(--spacing-lg);
+      border: 1px solid var(--border);
+    }
+
+    .preview-item h3 {
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-md);
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+
+    .preview-content {
+      position: relative;
+      background: rgba(255,255,255,0.5);
+      border-radius: var(--radius-sm);
+      padding: var(--spacing-md);
+      border: 1px solid var(--border);
+      min-height: 50px;
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-md);
+    }
+
+    .preview-content span {
+      flex: 1;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .copy-button {
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: var(--font-size-sm);
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .copy-button:hover {
+      background: var(--primary-dark);
+      transform: scale(1.05);
+    }
+
+    .copy-button:active {
+      transform: scale(0.95);
+    }
+
+    .copy-button.copied {
+      background: var(--success);
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md);
+      justify-content: center;
+      margin-bottom: var(--spacing-xl);
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: var(--spacing-lg) var(--spacing-xl);
+      border: none;
+      border-radius: var(--radius-md);
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      min-width: 200px;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, #764ba2 100%);
+      color: var(--white);
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-secondary {
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+      color: var(--white);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(72, 187, 120, 0.4);
+    }
+
+    .btn:disabled {
+      background: #cbd5e0;
+      color: var(--text-muted);
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .section-header {
+      margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+      padding: var(--spacing-md);
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--border) 100%);
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--primary);
+    }
+
+    .section-header:first-of-type {
+      margin-top: 0;
+    }
+
+    .section-header h3 {
+      color: var(--primary);
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      margin: 0;
+    }
+
+    .placeholder {
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: var(--spacing-2xl);
+      padding: var(--spacing-xl);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-lg);
+      backdrop-filter: blur(10px);
+    }
+
+    .footer p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: var(--font-size-sm);
+    }
+
+    .placeholder-variable {
+      font-style: italic;
+      opacity: 0.5;
+    }
+
+    /* Privacy Notice Styles */
+    .privacy-notice {
+      background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+      border: 1px solid #38b2ac;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      line-height: 1.2rem;
+    }
+
+    .privacy-notice-icon {
+      font-size: 1.5rem;
+    }
+
+    .privacy-notice-title {
+      margin: 0;
+      font-weight: 600;
+      color: #234e52;
+    }
+
+    .privacy-notice-description {
+      margin: 0.25rem 0 0 0;
+      font-size: 0.9rem;
+      color: #2c7a7b;
+    }
+
+    /* Company Selection Styles */
+    .company-hint-text {
+      margin-left: auto;
+      font-size: 0.7rem;
+      opacity: 0.7;
+    }
+
+    /* Preview Content Styles */
+    .preview-content-custom {
+      white-space: pre-wrap;
+      min-height: 300px;
+    }
+
+    /* Footer Text Styles */
+    .footer-legal-text {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: var(--spacing-md); }
+      .header h1 { font-size: 2rem; }
+      .main-content { 
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+      }
+      .card { padding: var(--spacing-lg); }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🛡️ Generador Habeas Data</h1>
+      <p>Solicita la eliminación de tus datos personales de manera fácil y profesional</p>
+    </header>
+
+    <main class="main-content">
+      <section class="card">
+        <h2>📝 Datos para la Solicitud</h2>
+        <form id="habeaDataForm">
+          <div class="form-group-container">
+            <div class="category-indicator location">📍 Generales</div>
+            <div class="form-group">
+              <label for="ciudad">🏙️ Ciudad</label>
+              <input type="text" id="ciudad" placeholder="Ej: Bogotá, Medellín, Cali..." required>
+            </div>
+            <div class="form-group">
+              <label for="fecha">📅 Fecha</label>
+              <input type="date" id="fecha" required>
+            </div>
+          </div>
+          <div class="form-group-container">
+            <div class="category-indicator personal">👤 Datos Personales</div>
+            
+            <!-- Nota de privacidad -->
+            <div class="privacy-notice">
+              <span class="privacy-notice-icon">🔒</span>
+              <div>
+                <p class="privacy-notice-title"><strong>Privacidad garantizada:</strong> Los datos que ingreses no son almacenados en ningún servidor.</p>
+                <p class="privacy-notice-description">Todo el procesamiento se realiza localmente en tu navegador para máxima seguridad.</p>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="nombre">👨‍💼 Nombre Completo</label>
+              <input type="text" id="nombre" placeholder="Ej: Juan Pérez García" required>
+            </div>
+            <div class="form-group">
+              <label for="tipoDocumento">🆔 Tipo de Documento</label>
+              <select id="tipoDocumento" required>
+                <option value="">🔽 Seleccione su tipo de documento...</option>
+                <option value="Cédula de Ciudadanía">🆔 Cédula de Ciudadanía</option>
+                <option value="Cédula de Extranjería">🆔 Cédula de Extranjería</option>
+                <option value="Tarjeta de Identidad">🆔 Tarjeta de Identidad</option>
+                <option value="Pasaporte">✈️ Pasaporte</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="numeroDocumento">🔢 Número de Documento</label>
+              <input type="text" id="numeroDocumento" placeholder="Ej: 12345678" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">📱 Tu Teléfono</label>
+              <input type="tel" id="telefono" placeholder="Ej: +57 300 123 4567" required>
+            </div>
+            <div class="form-group">
+              <label for="correoPersonal">📧 Tu Correo Electrónico</label>
+              <input type="email" id="correoPersonal" placeholder="Ej: tu-correo@gmail.com" required>
+            </div>
+          </div>
+          <div class="form-group-container">
+            <div class="category-indicator company">🏢 Empresa</div>
+            <div class="form-group">
+              <label for="empresa">🏭 Nombre de la Empresa</label>
+              <div class="company-input-container">
+                <div class="company-input-wrapper">
+                  <input type="text" id="empresa" placeholder="Ej: Empresa XYZ S.A.S" required>
+                  <button type="button" class="company-suggestions-toggle" id="companyToggle" title="Ver empresas populares">
+                    💡
+                  </button>
+                </div>
+                <div class="popular-companies-hint">
+                  <span>💡</span>
+                  <span>Haz clic en el ícono para ver empresas populares</span>
+                </div>
+                <div class="popular-companies-panel" id="popularCompaniesPanel">
+                  <div class="popular-companies-header">
+                    <span>⭐</span>
+                    <span>Empresas Populares</span>
+                    <span class="company-hint-text">Haz clic para seleccionar</span>
+                  </div>
+                  <div class="company-chips-grid" id="companyChipsGrid">
+                    <!-- Los chips se generarán dinámicamente -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="correoDestinatario">📮 Correo de Contacto</label>
+              <div class="input-with-icon">
+                <span class="input-icon">📧</span>
+                <input type="email" id="correoDestinatario" placeholder="Ej: proteccion.datos@empresa.com" required>
+                <button type="button" class="email-search-toggle" id="emailSearchToggle" title="Buscar correo de contacto en Google">
+                  🔍
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>👁️ Vista Previa del Correo</h2>
+        <article class="preview-item">
+          <h3>📬 Asunto</h3>
+          <div class="preview-content">
+            <span id="asuntoPreview">Solicitud de eliminación de datos personales - Habeas Data</span>
+            <button class="copy-button" onclick="copyText('asuntoPreview')" title="Copiar asunto" aria-label="Copiar asunto">📄</button>
+          </div>
+        </article>
+        <article class="preview-item">
+          <h3>📨 Destinatario</h3>
+          <div class="preview-content">
+            <span id="destinatarioPreview">[correo destinatario]</span>
+            <button class="copy-button" onclick="copyText('destinatarioPreview')" title="Copiar destinatario" aria-label="Copiar destinatario">📄</button>
+          </div>
+        </article>
+        <article class="preview-item">
+          <h3>✉️ Mensaje</h3>
+          <div class="preview-content preview-content-custom">
+            <span id="mensajePreview"></span>
+            <button class="copy-button" onclick="copyText('mensajePreview')" title="Copiar mensaje completo" aria-label="Copiar mensaje">📄</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="action-buttons">
+      <button class="btn btn-primary" id="sendButton" disabled>
+        📨 Enviar Solicitud por Correo
+      </button>
+      <button class="btn btn-secondary" id="generateUrlButton">
+        🔗 Generar URL con Datos Actuales
+      </button>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-legal-text">⚖️ Esta herramienta genera solicitudes de eliminación de datos personales según la <strong>Ley 1581 de 2012</strong> de Colombia.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Application State and Configuration
+    class HabeaDataApp {
+      constructor() {
+        this.empresasData = {
+          'Claro Colombia': {
+            email: 'proteccion.datos@claro.com.co',
+            nombre: 'Claro Colombia S.A.'
+          },
+          'Movistar Colombia': {
+            email: 'protecciondatos@telefonica.com',
+            nombre: 'Colombia Telecomunicaciones S.A. E.S.P.'
+          },
+          'Tigo': {
+            email: 'protecciondatos@tigo.com.co',
+            nombre: 'Colombia Móvil S.A. E.S.P.'
+          },
+          'Bancolombia': {
+            email: 'protecciondatos@bancolombia.com.co',
+            nombre: 'Bancolombia S.A.'
+          },
+          'Banco de Bogotá': {
+            email: 'habeasdata@bancodebogota.com.co',
+            nombre: 'Banco de Bogotá S.A.'
+          },
+          'Davivienda': {
+            email: 'protecciondatos@davivienda.com', 
+            nombre: 'Banco Davivienda S.A.'
+          },
+          'BBVA Colombia': {
+            email: 'protecciondatos.colombia@bbva.com',
+            nombre: 'BBVA Colombia S.A.'
+          },
+          'Avianca': {
+            email: 'protecciondatos@avianca.com',
+            nombre: 'Avianca S.A.'
+          },
+          'Falabella': {
+            email: 'protecciondatos@falabella.com.co',
+            nombre: 'Falabella de Colombia S.A.'
+          },
+          'Éxito': {
+            email: 'protecciondatos@grupo-exito.com',
+            nombre: 'Almacenes Éxito S.A.'
+          }
+        };
+        
+        this.elements = {
+          ciudad: document.getElementById('ciudad'),
+          fecha: document.getElementById('fecha'),
+          nombre: document.getElementById('nombre'),
+          tipoDocumento: document.getElementById('tipoDocumento'),
+          numeroDocumento: document.getElementById('numeroDocumento'),
+          telefono: document.getElementById('telefono'),
+          correoPersonal: document.getElementById('correoPersonal'),
+          empresa: document.getElementById('empresa'),
+          correoDestinatario: document.getElementById('correoDestinatario'),
+          sendButton: document.getElementById('sendButton'),
+          generateUrlButton: document.getElementById('generateUrlButton'),
+          emailSearchToggle: document.getElementById('emailSearchToggle')
+        };
+        
+        this.previewElements = {
+          asunto: document.getElementById('asuntoPreview'),
+          destinatario: document.getElementById('destinatarioPreview'),
+          mensaje: document.getElementById('mensajePreview')
+        };
+        
+        this.initializeApp();
+      }
+      
+      initializeApp() {
+        this.setCurrentDate();
+        this.bindEvents();
+        this.setupCompanySelection();
+        this.setupEmailSearch();
+        this.loadFromURL();
+        this.updatePreview();
+      }
+      
+      setCurrentDate() {
+        const today = new Date().toISOString().split('T')[0];
+        this.elements.fecha.value = today;
+      }
+      
+      bindEvents() {
+        // Form validation and preview update
+        Object.values(this.elements).forEach(element => {
+          if (element && element.addEventListener) {
+            element.addEventListener('input', () => {
+              this.updatePreview();
+              this.validateForm();
+            });
+            element.addEventListener('change', () => {
+              this.updatePreview();
+              this.validateForm();
+            });
+          }
+        });
+        
+        // Button events
+        this.elements.sendButton.addEventListener('click', () => this.sendEmail());
+        this.elements.generateUrlButton.addEventListener('click', () => this.generateURL());
+        this.elements.emailSearchToggle.addEventListener('click', () => this.searchCompanyEmail());
+        
+        // Email field visibility for search button
+        this.elements.correoDestinatario.addEventListener('input', () => this.toggleEmailSearchButton());
+        this.elements.correoDestinatario.addEventListener('blur', () => this.toggleEmailSearchButton());
+        this.elements.correoDestinatario.addEventListener('focus', () => this.toggleEmailSearchButton());
+      }
+      
+      validateForm() {
+        const requiredFields = [
+          this.elements.ciudad,
+          this.elements.fecha,
+          this.elements.nombre,
+          this.elements.tipoDocumento,
+          this.elements.numeroDocumento,
+          this.elements.telefono,
+          this.elements.correoPersonal,
+          this.elements.empresa,
+          this.elements.correoDestinatario
+        ];
+        
+        const isValid = requiredFields.every(field => field && field.value.trim() !== '');
+        this.elements.sendButton.disabled = !isValid;
+      }
+      
+      processTextWithPlaceholders(text) {
+        // Reemplazar las variables placeholder con spans que tengan la clase CSS
+        return text.replace(/\[([^\]]+)\]/g, '<span class="placeholder-variable">[$1]</span>');
+      }
+      
+      updatePreview() {
+        const data = this.getFormData();
+        
+        // Update subject
+        this.previewElements.asunto.textContent = 'Solicitud de eliminación de datos personales - Habeas Data';
+        
+        // Update recipient with placeholder styling
+        const destinatarioText = data.correoDestinatario || '[correo destinatario]';
+        this.previewElements.destinatario.innerHTML = this.processTextWithPlaceholders(destinatarioText);
+        
+        // Update message with placeholder styling
+        const mensaje = this.generateMessage(data);
+        this.previewElements.mensaje.innerHTML = this.processTextWithPlaceholders(mensaje.replace(/\n/g, '<br>'));
+      }
+      
+      getFormData() {
+        return {
+          ciudad: this.elements.ciudad.value,
+          fecha: this.elements.fecha.value,
+          nombre: this.elements.nombre.value,
+          tipoDocumento: this.elements.tipoDocumento.value,
+          numeroDocumento: this.elements.numeroDocumento.value,
+          telefono: this.elements.telefono.value,
+          correoPersonal: this.elements.correoPersonal.value,
+          empresa: this.elements.empresa.value,
+          correoDestinatario: this.elements.correoDestinatario.value
+        };
+      }
+      
+      generateMessage(data) {
+        const fechaFormateada = this.formatDate(data.fecha) || '[fecha]';
+        const ciudad = data.ciudad || '[ciudad]';
+        const empresa = data.empresa || '[empresa]';
+        const nombre = data.nombre || '[nombre]';
+        const tipoDocumento = data.tipoDocumento || '[tipo documento]';
+        const numeroDocumento = data.numeroDocumento || '[número documento]';
+        const telefono = data.telefono || '[teléfono]';
+        const correoPersonal = data.correoPersonal || '[correo personal]';
+        
+        return `${ciudad}, ${fechaFormateada}
+
+Señores
+${empresa}
+
+Asunto: Solicitud de eliminación de datos personales - Habeas Data
+
+Cordial saludo,
+
+Por medio de la presente, yo ${nombre}, identificado(a) con ${tipoDocumento} número ${numeroDocumento}, con teléfono ${telefono} y correo electrónico ${correoPersonal}, me dirijo respetuosamente a ustedes para ejercer mi derecho fundamental al Habeas Data, consagrado en el artículo 15 de la Constitución Política de Colombia y reglamentado por la Ley 1581 de 2012.
+
+SOLICITO formalmente:
+
+1. La ELIMINACIÓN COMPLETA de todos mis datos personales que obren en sus bases de datos, archivos, registros y sistemas de información.
+
+2. La CONFIRMACIÓN por escrito de que mis datos han sido eliminados definitivamente de todos sus sistemas.
+
+3. Que se abstengan de utilizar, procesar, almacenar o transferir mis datos personales a terceros.
+
+FUNDAMENTOS LEGALES:
+
+- Artículo 15 de la Constitución Política de Colombia (Derecho al Habeas Data)
+- Ley 1581 de 2012 "Por la cual se dictan disposiciones generales para la protección de datos personales"
+- Decreto 1377 de 2013 (Decreto reglamentario de la Ley 1581 de 2012)
+
+De conformidad con el artículo 14 de la Ley 1581 de 2012, solicito respuesta a esta petición dentro de los QUINCE (15) días hábiles siguientes al recibo de la presente comunicación.
+
+En caso de no recibir respuesta oportuna o satisfactoria, me reservo el derecho de elevar la correspondiente queja ante la Superintendencia de Industria y Comercio - Delegatura para la Protección de Datos Personales.
+
+Agradezco su pronta respuesta y colaboración.
+
+Atentamente,
+
+${nombre}
+${tipoDocumento}: ${numeroDocumento}
+Teléfono: ${telefono}
+Correo: ${correoPersonal}`;
+      }
+      
+      formatDate(dateString) {
+        if (!dateString) return '';
+        
+        const date = new Date(dateString + 'T00:00:00');
+        const months = [
+          'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+          'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
+        ];
+        
+        const day = date.getDate();
+        const month = months[date.getMonth()];
+        const year = date.getFullYear();
+        
+        return `${day} de ${month} de ${year}`;
+      }
+      
+      sendEmail() {
+        const data = this.getFormData();
+        const subject = encodeURIComponent('Solicitud de eliminación de datos personales - Habeas Data');
+        const body = encodeURIComponent(this.generateMessage(data));
+        const mailto = `mailto:${data.correoDestinatario}?subject=${subject}&body=${body}`;
+        
+        window.location.href = mailto;
+      }
+      
+      generateURL() {
+        const data = this.getFormData();
+        const params = new URLSearchParams();
+        
+        Object.entries(data).forEach(([key, value]) => {
+          if (value) params.set(key, value);
+        });
+        
+        const url = `${window.location.origin}${window.location.pathname}?${params.toString()}`;
+        
+        navigator.clipboard.writeText(url).then(() => {
+          const originalText = this.elements.generateUrlButton.textContent;
+          this.elements.generateUrlButton.textContent = '✅ URL Copiada';
+          this.elements.generateUrlButton.classList.add('copied');
+          
+          setTimeout(() => {
+            this.elements.generateUrlButton.textContent = originalText;
+            this.elements.generateUrlButton.classList.remove('copied');
+          }, 2000);
+        });
+      }
+      
+      loadFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        
+        Object.keys(this.elements).forEach(key => {
+          const value = params.get(key);
+          if (value && this.elements[key]) {
+            this.elements[key].value = value;
+          }
+        });
+      }
+      
+      setupCompanySelection() {
+        const empresaInput = this.elements.empresa;
+        const companyToggle = document.getElementById('companyToggle');
+        const popularCompaniesPanel = document.getElementById('popularCompaniesPanel');
+        const companyChipsGrid = document.getElementById('companyChipsGrid');
+        
+        // Generar chips de empresas
+        this.generateCompanyChips();
+        
+        // Toggle del panel de empresas populares
+        companyToggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const isShowing = popularCompaniesPanel.classList.contains('show');
+          
+          if (isShowing) {
+            popularCompaniesPanel.classList.remove('show');
+            companyToggle.textContent = '💡';
+            companyToggle.title = 'Ver empresas populares';
+          } else {
+            popularCompaniesPanel.classList.add('show');
+            companyToggle.textContent = '🔼';
+            companyToggle.title = 'Ocultar empresas populares';
+          }
+        });
+        
+        // Cerrar panel al hacer clic fuera
+        document.addEventListener('click', (e) => {
+          if (!popularCompaniesPanel.contains(e.target) && 
+              !companyToggle.contains(e.target) && 
+              !empresaInput.contains(e.target)) {
+            popularCompaniesPanel.classList.remove('show');
+            companyToggle.textContent = '💡';
+            companyToggle.title = 'Ver empresas populares';
+          }
+        });
+        
+        // También mostrar el panel cuando el usuario hace clic en el input
+        empresaInput.addEventListener('focus', () => {
+          if (!empresaInput.value.trim()) {
+            popularCompaniesPanel.classList.add('show');
+            companyToggle.textContent = '🔼';
+            companyToggle.title = 'Ocultar empresas populares';
+          }
+        });
+      }
+      
+      generateCompanyChips() {
+        const companyChipsGrid = document.getElementById('companyChipsGrid');
+        
+        const chips = Object.keys(this.empresasData).map(empresa => {
+          const empresaData = this.empresasData[empresa];
+          return `
+            <div class="company-chip" data-empresa="${empresa}">
+              <span class="company-chip-name">${empresa}</span>
+              <span class="company-chip-icon">✨</span>
+            </div>
+          `;
+        }).join('');
+        
+        companyChipsGrid.innerHTML = chips;
+        
+        // Agregar event listeners a los chips
+        companyChipsGrid.querySelectorAll('.company-chip').forEach(chip => {
+          chip.addEventListener('click', () => {
+            const selectedEmpresa = chip.dataset.empresa;
+            const empresaData = this.empresasData[selectedEmpresa];
+            
+            this.elements.empresa.value = empresaData.nombre;
+            this.elements.correoDestinatario.value = empresaData.email;
+            
+            // Ocultar el panel después de seleccionar
+            const popularCompaniesPanel = document.getElementById('popularCompaniesPanel');
+            const companyToggle = document.getElementById('companyToggle');
+            popularCompaniesPanel.classList.remove('show');
+            companyToggle.textContent = '💡';
+            companyToggle.title = 'Ver empresas populares';
+            
+            // Añadir un pequeño efecto de feedback
+            chip.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+              chip.style.transform = '';
+            }, 150);
+            
+            this.updatePreview();
+            this.validateForm();
+          });
+        });
+      }
+      
+      setupEmailSearch() {
+        // Initialize email search button visibility
+        this.toggleEmailSearchButton();
+      }
+      
+      toggleEmailSearchButton() {
+        const emailValue = this.elements.correoDestinatario.value.trim();
+        const searchButton = this.elements.emailSearchToggle;
+        
+        if (emailValue === '') {
+          searchButton.classList.add('show');
+        } else {
+          searchButton.classList.remove('show');
+        }
+      }
+      
+      searchCompanyEmail() {
+        const companyName = this.elements.empresa.value.trim();
+        
+        if (!companyName) {
+          alert('⚠️ Debes ingresar primero el nombre de la empresa para hacer la búsqueda.');
+          this.elements.empresa.focus();
+          return;
+        }
+        
+        const searchQuery = `"tratamiento de datos" "correo" "${companyName}"`;
+        const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+        
+        window.open(googleSearchUrl, '_blank');
+      }
+    }
+
+    // Utility Functions
+    async function copyText(elementId) {
+      const element = document.getElementById(elementId);
+      const text = element.textContent || element.innerText;
+      const button = element.parentElement.querySelector('.copy-button');
+      const originalIcon = button.textContent;
+      
+      try {
+        await navigator.clipboard.writeText(text);
+        button.textContent = '✅';
+        button.classList.add('copied');
+        
+        setTimeout(() => {
+          button.textContent = originalIcon;
+          button.classList.remove('copied');
+        }, 2000);
+      } catch (err) {
+        console.error('Error copying text:', err);
+        alert('❌ No se pudo copiar el texto. Inténtalo de nuevo.');
+      }
+    }
+
+    // Initialize Application
+    document.addEventListener('DOMContentLoaded', () => {
+      new HabeaDataApp();
+    });
+  </script>
+
+</body>
+</html>
